@@ -3,12 +3,12 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels: # label of POD can be changed in run time and after that also
-    x1: ms-demo # key and value pair 
-  name: ms-demo # name of pod 
+    x1: msdemo # key and value pair 
+  name: msdemo # name of pod 
 spec:
   containers:
   - image: swamigmv/ms-demo:v01 # docker hub image 
-    name: ms-demo # name of POD 
+    name: msdemo # name of POD 
     ports: # app port 
     - containerPort: 8081
     resources: {}
@@ -23,8 +23,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: ms-demo
-  name: ms-demo # name of service 
+    app: msdemo
+  name: msdemo # name of service 
 spec:
   ports:
   - name: 1234-80
@@ -32,7 +32,7 @@ spec:
     protocol: TCP
     targetPort: 8081 # app port which is running in a pod 
   selector: # POd finder using label of pod 
-    x1: ms-demo # this is label of POD 
+    x1: msdemo # this is label of POD 
   type: NodePort # type of service 
 status:
   loadBalancer: {}
