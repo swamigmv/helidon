@@ -116,6 +116,6 @@ spec:
     targetPort: 80
   selector:
     app: ashuwebapp
-  type: loadBalancer
+  type: LoadBalancer
 status:
   loadBalancer: {}
