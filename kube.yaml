@@ -3,5 +3,5 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels: # label of POD can be changed in run time and after that also
-    x1: ms-demo # key and value pair 
-  name: ms-demo # name of pod 
+    x1: msdemo # key and value pair 
+  name: msdemo # name of pod 
