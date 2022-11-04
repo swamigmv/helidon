@@ -7,7 +7,7 @@ metadata:
   name: msdemo # name of pod 
 spec:
   containers:
-  - image: swamigmv/ms-demo:v01 # docker hub image 
+  - image: swamigmv/ms-demo:v1 # docker hub image 
     name: msdemo # name of POD 
     ports: # app port 
     - containerPort: 8081
