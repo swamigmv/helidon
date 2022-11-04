@@ -16,23 +16,4 @@ spec:
   restartPolicy: Always
 status: {}
 
----
 
-apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: null
-  labels:
-    app: msdemo
-  name: msdemo # name of service 
-spec:
-  ports:
-  - name: 1234-80
-    port: 8081 # service IP port number 
-    protocol: TCP
-    targetPort: 8081 # app port which is running in a pod 
-  selector: # POd finder using label of pod 
-    x1: msdemo # this is label of POD 
-  type: NodePort # type of service 
-status:
-  loadBalancer: {}
