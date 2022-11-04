@@ -5,14 +5,3 @@ metadata:
   labels: # label of POD can be changed in run time and after that also
     x1: ms-demo # key and value pair 
   name: ms-demo # name of pod 
-spec:
-  containers:
-  - image: swamigmv/ms-demo:v01 # docker hub image 
-    name: ms-demo # name of POD 
-    ports: # app port 
-    - containerPort: 8081
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
-
